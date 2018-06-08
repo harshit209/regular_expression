@@ -1,0 +1,11 @@
+question 2
+
+import re
+text = "Betty bought a bit of butter, But the butter was so bitter, .\
+So she bought some better butter, To make the bitter butter better."
+l = re.findall(r'\bB\w+', text, flags= re.IGNORECASE)
+print(l)
+
+output
+
+['Betty', 'bought', 'bit', 'butter', 'But', 'butter', 'bitter', 'bought', 'better', 'butter', 'bitter', 'butter', 'better']
